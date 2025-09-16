@@ -46,3 +46,36 @@ slope = (y2 - y1) / (x2 - x1)
 
 print(slope) # Output: 2.0 
 ```
+
+### loop unpacking
+#### the for iterate through points considering the tuples as objects and executing one time by tuple
+
+```python
+points = [[0, 0], [2, 4], [3, 6], [5, 10]]
+
+for x, y in points:
+    print(f"x: {x}, y: {y}")
+
+```
+
+### enumerate
+#### used to iterate in list and have both the value and index at the same time
+
+```python
+nums = [2, 7, 9, 2]
+
+for index, value in enumerate(nums):
+    print(index, value)
+```
+
+### zip
+#### Allows to dynamically associate 2 lists in a single one with values correlated to the indexes ** lists need to be of the same length
+
+```python
+names = ['Alice', 'Bob', 'Charlie', 'David']
+scores = [90, 85, 88, 92]
+
+for name, score in zip(names, scores):
+    print(f"{name} scored {score}")
+```
+
