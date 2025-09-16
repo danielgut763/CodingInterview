@@ -79,3 +79,43 @@ for name, score in zip(names, scores):
     print(f"{name} scored {score}")
 ```
 
+## Lists in python
+
+### Basics
+```python
+lista = [1,2,3]
+
+lista.append(value) #ads the value to the end of the list
+lista.pop() #remove the last item of the list
+lista.insert(index, value) #adds the value on the specific index 
+lista.index(value) #returns the index of the first occurance of the value on the list 
+lista.remove(value) #remove the first occurance of the value on the list
+lista.extend(list) #adds the list on the end of the other lista
+```
+
+### Concatenate
+#### Instead of using extend we can use +
+
+```python
+list1 = [1,2,3]
+list2 = [4,5,6]
+
+list1 + list2 = [1,2,3,4,5,6]
+list1.extend(list2) = [1,2,3,4,5,6]
+```
+
+### Initialization
+#### If we need to create lists of specific sizes 
+
+```python
+my_list = [0] * 5 #would create a list of [0,0,0,0,0]
+my_list = [1] * 3 #would create a list of [1,1,1]
+```
+### Copy
+#### To clone a list we use the .copy() command
+
+```python
+list1 = [1,2,3]
+clone = list1.copy()
+```
+
