@@ -119,3 +119,41 @@ list1 = [1,2,3]
 clone = list1.copy()
 ```
 
+### List Comprehension 
+#### in Python we can create lists in concise way 
+
+``` python
+lis1 = [i for i in range(5)] # this creates the list [0,1,2,3,4]
+
+result = [i for i in list1 if i % 2 ==0] #this would take the list1 and add to the result just the even numbers, so result would be [0,2,4]
+```
+
+## Stacks and Queues
+### Stack
+#### Python doesn`t have built in stack data structures but lists can be used just about the same
+
+```python
+stack = []
+stack.append(value) #adds the value to the top of the stack
+stack.pop() #removes the top element of the stack, and returns its value
+stack[-1] #will always have the top element
+```
+
+### Queue 
+#### queue are implemented in python using the deque structure which is a double ended queue
+
+``` python
+from collection import deque
+
+queue = deque([3,4,5])
+
+queue.append(1) # [3,4,5,1]
+queue.append(2) # [3,4,5,1,2]
+
+queue.popleft() # returns 1 and the queue now is [4,5,1,2]
+leftmost = queue[0] # 4
+rightmost = queue[-1] # 2
+
+len(queue) #can be use as a isEmpty function 
+
+
